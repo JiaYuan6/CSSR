@@ -23,7 +23,7 @@ parser.add_argument('--hidden-size', type=int, default=128, help='hidden state s
 parser.add_argument('--out-size', type=int, default=128, help='这个要和节点向量保持一致')
 parser.add_argument('--l2', type=float, default=1e-4, help='l2 惩罚系数')
 parser.add_argument('--lr', type=float, default=0.009, help='学习率')
-parser.add_argument('--step', type=int, default=4, help='gnn 单元的层数')
+parser.add_argument('--step', type=int, default=3, help='gnn 单元的层数')
 parser.add_argument('--lr-dc', type=float, default=0.96, help='学习率衰减率,学习率=学习率*衰减率')
 parser.add_argument('--lr_dc_step', type=int, default=100, help='学习率下降的步骤数，没100就乘以衰减率')
 parser.add_argument('--topK', type=int, default=10, help='保留前K个')
